@@ -1,0 +1,9 @@
+SELECT P.PULPIT_NAME
+FROM PULPIT P
+where P.FACULTY = 
+	(SELECT F1.FACULTY 
+		FROM FACULTY F1 
+		WHERE F1.FACULTY_NAME = 'Факультет информационных технологий');
+
+SELECT *
+FROM FACULTY
